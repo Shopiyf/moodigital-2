@@ -1,0 +1,41 @@
+---
+export const prerender = true;
+import Layout from "../layouts/Layout.astro";
+import GlobalEmbeds from "../components/GlobalEmbeds.astro";
+import Header from "../components/Header.astro";
+import Hero from "../components/sections/Hero.astro";
+import Agent from "../components/sections/Agent.astro";
+import Charly from "../components/sections/Charly.astro";
+import Integrations from "../components/sections/Integrations.astro";
+import Process from "../components/sections/Process.astro";
+import Reviews from "../components/sections/Reviews.astro";
+import Faq from "../components/sections/Faq.astro";
+import Newsletter from "../components/sections/Newsletter.astro";
+import Cta from "../components/sections/Cta.astro";
+import PricingModal from "../components/modals/PricingModal.astro";
+import Footer from "../components/Footer.astro";
+import AnnouncementBar from "../components/AnnouncementBar.astro";
+import CookieGroup from "../components/CookieGroup.astro";
+---
+
+<Layout>
+  <div class="page-wrapper">
+    <GlobalEmbeds />
+    <Header />
+    <div class="main-wrapper">
+      <Hero />
+      <Agent />
+      <Charly />
+      <Integrations />
+      <Process />
+      <Reviews />
+      <Faq />
+      <Newsletter />
+      <Cta />
+      <PricingModal />
+    </div>
+    <Footer />
+    <AnnouncementBar />
+  </div>
+  <CookieGroup />
+</Layout>
